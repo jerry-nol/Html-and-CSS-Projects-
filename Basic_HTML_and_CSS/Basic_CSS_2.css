@@ -1,0 +1,9 @@
+p {
+	color: coral;
+	background: lightgrey;
+	font-style: italic;
+	font-size: small;
+  }
+h1 {
+  text-shadow: 3px 3px chartreuse;
+}

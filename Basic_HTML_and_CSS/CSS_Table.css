@@ -1,0 +1,16 @@
+table {
+	border: 5px solid goldenrod;
+}
+td:hover {
+	background-color: grey;
+	color: black;
+}
+tr, th {
+	background-color: papayawhip;
+	color: tomato;
+}
+tr, td {
+	background-color: snow;
+	color: olive;
+}
+   
