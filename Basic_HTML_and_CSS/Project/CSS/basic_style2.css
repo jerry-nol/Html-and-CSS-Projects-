@@ -1,0 +1,93 @@
+body { 
+    background-color: #fff;
+}
+
+h1 {
+    color: rgb(8, 141, 165,1);
+    margian-left: 100px;
+    text shadow: 2px 1px 4px rgba(0.0.0 0.6);
+}
+
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* select all squares in the array */
+.container .squares:nth-child(-n+4) {
+    background-image: url("../images/icons/smileyface2.jpg.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px; 
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+
+/*Select all paragraphs in the array  */
+.squares:nth-child(-n+4) p {
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+    cursor: pointer;
+}
+
+
+/* Indivdually select square in the array */
+.squares:nth-child(1) {
+    background-color: turquoise;
+}
+.squares:nth-child(2) {
+    background-color: yellow;
+}
+.squares:nth-child(3) {
+    background-color: tomato;
+}
+.squares:nth-child(4) {
+    background-color: seagreen;
+}
+
+
+/* Hover, Translate, & Transform Effect */
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../Images/Icons/smileyface1.jpg.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+}
+.squares:nth-child(1):hover {
+    background-color: #5f246e;
+}
+.squares:nth-child(2):hover {
+    background-color: #bb0202
+}
+.squares:nth-child(3):hover {
+    background-color: rgb(17, 202, 226);
+}
+.squares:nth-child(4):hover {
+    background-color: #9b8008;
+}
+
+/* Animation Effect */
+@keyframes-race {
+    0% 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/smileyface1.jpg.png");
+    }
+    50% {
+        transform: translateY(330px);
+    }
+} 
