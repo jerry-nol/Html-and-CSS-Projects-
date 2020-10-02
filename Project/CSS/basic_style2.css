@@ -62,7 +62,7 @@ h1 {
 /* Hover, Translate, & Transform Effect */
 .container .squares:nth-child(-n+4):hover {
     background-image: url("../Images/Icons/smileyface1.jpg.png");
-    transform: scale(.9);
+    transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
