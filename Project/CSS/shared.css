@@ -21,7 +21,7 @@ footer, nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Open San, sans-serif;
+    font-family: 'Open San', sans-serif;
 }
 
 /* This Is The Underline */
@@ -38,9 +38,9 @@ h1 {
 h1::after {
     display: block;
     background-color: #E91C1C;
-    width: 2px;
-    height: 150px;
-    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0);
+    width: 150px;
+    height: 2px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
     margin: 5px auto 40px;
     content: "";
 }
@@ -128,7 +128,7 @@ p {
 .menu-container {
     max-height: 340px;
     margin: 0% auto;
-    content: " ";
+    content: "";
     /* top: 0;
      left: 0; */
     /*position: absolute; */ /*to the top edge of the screen*/
@@ -312,9 +312,9 @@ p {
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.submit input[type="text"]:hover {
+.submit input[type="Submit"]:hover {
     color: #000;
-    background-color: #8d8e8f;
+    background-color: #d8e8f8;
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 }
 
