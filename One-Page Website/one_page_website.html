@@ -26,7 +26,7 @@
 					<div>
 							<span>About The Giveaway</span>
 							<p>This is the anual giveaway that we love to do for all the fans of the sport of boxing.
-							All you have to do is enter your info below and you will be automatically enter in the raffle.</p>
+							All you have to do is enter your info below and you will be automatically entered in the raffle.</p>
 					</div>
 				</div>
 			</div>
@@ -36,41 +36,63 @@
 			<section>	
 				<div id="gallery">
 					<h1>Gloves That Will Be Given</h1>
-					<div>
 						
 						<!--Photo Container 1-->
-							<div>
-								<img src="./photos/thumb/image_1.jpg" alt="Brown pair of boxing gloves.">
+						<div class="row">
+							<div class="cloumn">
+								<img src="./photos/thumb/image_1.jpg" alt="Brown pair of boxing gloves."
+								onclick="openModal();currentSlides(1)" class="hover-shadow cursor">
 								<div>
-									<h1>Click to Enlarge</h1>
 									<p>Lucky winner number 1 will get this pair</p>
 								</div>
 							</div>
 							<!--End Photo Container 1-->
 						
 							<!--Photo Container 2-->
+							<div class="column">
+								<img src="./photos/thumb/image_2.jpg" alt="Blue pair of boxing gloves."
+								onclick="openModal();currentSlides(2)" class="hover-shadow cursor">
 								<div>
-									<img src="./photos/thumb/image_2.jpg" alt="Blue pair of boxing gloves.">
-									<div>
-										<h1>Click to Enlarge</h1>
-										<p>Lucky winner number 2 will get this pair</p>
-									</div>
+									<p>Lucky winner number 2 will get this pair</p>
 								</div>
-								<!--End Photo Container 2-->
-						
-								<!--Photo Container 3-->
+							</div>
+							<!--End Photo Container 2-->
+					
+							<!--Photo Container 3-->
+							<div class="column">
+								<img src="./photos/thumb/image_3.jpg" alt ="Red pair of boxing gloves."
+								onclick="openModal();currentSlides(3)" class="hover-shadow cursor">
 								<div>
-									<div>
-										<img src="./photos/thumb/image_3.jpg" alt ="Red pair of boxing gloves.">
-										<div>
-											<h1>Click to Enlarge</h1>
-											<p>Lucky winner number 3 will get this pair</p>
-										</div>
-									</div>
+									<p>Lucky winner number 3 will get this pair</p>
 								</div>
-								<!--End Photo Container 3-->
-				
-					</div>
+							</div>
+						</div>
+						<!--End Photo Container 3-->
+
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+								<div class="mySlides">
+									<div class="numbertext">1 / 3</div>
+									<img src="./photos/thumb/image_1.jpg" style="width: 100%">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">2 / 3</div>
+									<img src="./photos/thumb/image_2.jpg" style="width:100%;">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">3 / 3</div>
+									<img src="./photos/thumb/image_3.jpg" style="width: 100%;">
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+								<a class="next" onclick="plusSliddes(1)">&#10095</a>
+							</div>
+						</div>
+								
 				</div>
 			</section>	
 		<!--End Gallery-->
@@ -87,10 +109,10 @@
 							</p>
 							<div class="form">
 								<form action=""	method="post">
-									<input class="rsvp" type="text" value="First Name">
-									<input class="rsvp" type="text" value="Last Name">
-									<input class="rsvp" type="text" value="Email Address">
-									<input class="rsvp" type="text" value="Phone Number">
+									<input class="rsvp" type="text" value="" placeholder="First Name">
+									<input class="rsvp" type="text" value="" placeholder="Last Name">
+									<input class="rsvp" type="text" value="" placeholder="Email Address">
+									<input class="rsvp" type="text" value="" placeholder="Phone Number">
 									<div class="form-spacer">
 										<label class="terms"> Terms and Conditions</label>
 									</div>
@@ -116,4 +138,6 @@
 		<!--End Footer-->
 	
 	</body>
+	<script src="./JS/one_page_website.js"></script>
+
 </html>
