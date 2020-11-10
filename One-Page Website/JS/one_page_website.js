@@ -16,11 +16,15 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("myslides");
-    if (n > slides.length) {slidesIndex = 1}
-    if (n < 1) {slidesIndex = slides.length}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }

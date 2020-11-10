@@ -20,7 +20,7 @@ input {
     clear: both;
 }
 
-Creating equal columns that float next to each other
+/* Creating equal columns that float next to each other */
 .column {
     float: left;
     width: 25%;
@@ -90,7 +90,7 @@ Creating equal columns that float next to each other
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(192, 173, 173, 0.8);
 }
 
 .numbertext {
